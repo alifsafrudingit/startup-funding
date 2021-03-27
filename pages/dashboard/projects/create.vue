@@ -18,7 +18,7 @@
         <div class="w-1/4 text-right">
           <button
             @click="save"
-            class="bg-green-button hover:bg-green-button text-white font-bold px-4 py-1 rounded inline-flex items-center"
+            class="bg-orange-button hover:bg-green-button text-white font-bold px-4 py-1 rounded inline-flex items-center"
           >
             Save
           </button>
@@ -110,6 +110,7 @@
 
 <script>
 export default {
+  middleware: 'auth',
   data() {
     return {
       campaign: {
